@@ -17,7 +17,9 @@ print(r"""
   / _ \| .` |/ _ \|   | (__| __ |\ V /\_, \_, /
  /_/ \_|_|\_/_/ \_|_|_\\___|_||_| |_|  /_/ /_/ 
                  MASS SMTP CHECKER
-                 john.dhoe412@gmail.com                           			""")
+                 john.dhoe412@gmail.com
+		 https://www.facebook.com/jancoxx412
+		 """)
 
 
 t = string.ascii_lowercase
