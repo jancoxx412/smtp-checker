@@ -69,13 +69,13 @@ BERHASIL TEST EMAIL DARI %s
 
 
 # Do not change anything below. 
-email = raw_input(" [ - ] Email Yang Dituju : ")
-accounts = raw_input(" [ - ] List SMTPnya : ")
+email = raw_input(" [ - ] Email Destinatoon : ")
+accounts = raw_input(" [ - ] SMTP LIST : ")
 try: 
     list = list(open(accounts))
 except: 
-	print"\n[+] File e Raonok Cok"
-	print"\n[+] Cek Maneh ..."
+	print"\n[+] File list Notfound"
+	print"\n[+] Please Check Again"
 
 #listindex = 0
 nList = []
@@ -86,9 +86,9 @@ for line in list:
 		password = line.split(':')[2].replace('\n', '')
 		sendchk(list.index(line), host, user, password)
 	except:
-		print '\n[+] Format list salah ...'
+		print '\n[+] Wrong List Format ...'
 		print host, user
-		print '\n[!] Format list wajib IP:USER:PASS'
+		print '\n[!] Format list IP:USER:PASS'
 		print '\n[-] Aborted...\n'
 		exit(1)
 
